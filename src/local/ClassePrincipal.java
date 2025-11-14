@@ -25,9 +25,32 @@ public class ClassePrincipal {
 		
 		do{
 			
-			System.out.println("MENU DE OPÇÃO");
+			limparTela();
+			System.out.println("MENU DE OPÇÃO"); //sysout + crtl + space
+			System.out.println("[1] Adicionar um aluno");
+			System.out.println("[2] Excluir um aluno");
+			System.out.println("[3] Ver alunos");
+			System.out.println("[4] SAIR");
 			
-		}while(opcao != 3);
+			opcao = sc.nextInt();
+			sc.nextLine();
+			
+			limparTela();
+			
+			switch(opcao){
+			
+			case 1:
+				System.out.println("Selecionado opção 1");
+			case 2:
+				System.out.println("Selecionado opção 2");
+			case 3:
+				System.out.println("Selecionado opção 3");
+			default:
+				System.out.println("Opção Padrão");
+				
+			}
+			
+		} while(opcao != 4);
 		
 
 	}
